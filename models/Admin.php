@@ -80,10 +80,10 @@ class Admin extends User {
                 break;
             case 'update':
                 $this->db->query("UPDATE categories SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
-                echo "Catégorie mise à jour avec succès.\n";
+                // echo "Catégorie mise à jour avec succès.\n";
                 break;
             case 'delete':
-                // $this->db->query("DELETE FROM categories WHERE id = ?", [$data['id']]);
+                $this->db->query("DELETE FROM categories WHERE id = ?", [$data['id']]);
                 echo "Catégorie supprimée avec succès.\n";
                 break;
             default:
