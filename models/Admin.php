@@ -84,10 +84,10 @@ class Admin extends User {
                 break;
             case 'delete':
                 $this->db->query("DELETE FROM categories WHERE id = ?", [$data['id']]);
-                echo "Catégorie supprimée avec succès.\n";
+                // echo "Catégorie supprimée avec succès.\n";
                 break;
             default:
-                // throw new Exception("Action non reconnue pour les catégories.");
+                throw new Exception("Action non reconnue pour les catégories.");
         }
     }
 
