@@ -87,11 +87,11 @@ class Admin extends User {
                 echo "Catégorie supprimée avec succès.\n";
                 break;
             default:
-                throw new Exception("Action non reconnue pour les catégories.");
+                // throw new Exception("Action non reconnue pour les catégories.");
         }
     }
 
-    // private function manageTag($action, $data) {
+    private function manageTag($action, $data) {
         switch ($action) {
             case 'add':
                 $this->db->insert("INSERT INTO tags (name) VALUES (?)", [$data['name']]);
