@@ -114,9 +114,9 @@ class Admin extends User {
         $totalCourses = $this->db->fetchColumn("SELECT COUNT(*) FROM courses");
         $totalUsers = $this->db->fetchColumn("SELECT COUNT(*) FROM users");
         $totalTeachers = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'teacher'");
-        $totalStudents = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'student'");
+        // $totalStudents = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'student'");
 
-        // echo "Statistiques globales :\n";
+        echo "Statistiques globales :\n";
         echo "- Nombre total de cours : $totalCourses\n";
         echo "- Nombre total d'utilisateurs : $totalUsers\n";
         echo "- Nombre total d'enseignants : $totalTeachers\n";
