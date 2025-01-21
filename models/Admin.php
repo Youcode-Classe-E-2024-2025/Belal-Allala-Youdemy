@@ -106,11 +106,11 @@ class Admin extends User {
                 echo "Tag supprimé avec succès.\n";
                 break;
             default:
-                throw new Exception("Action non reconnue pour les tags.");
+                // throw new Exception("Action non reconnue pour les tags.");
         }
     }
 
-    // public function viewGlobalStatistics() {
+    public function viewGlobalStatistics() {
         $totalCourses = $this->db->fetchColumn("SELECT COUNT(*) FROM courses");
         $totalUsers = $this->db->fetchColumn("SELECT COUNT(*) FROM users");
         $totalTeachers = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'teacher'");
