@@ -76,10 +76,10 @@ class Admin extends User {
         switch ($action) {
             case 'add':
                 $this->db->insert("INSERT INTO categories (name) VALUES (?)", [$data['name']]);
-                echo "Catégorie ajoutée avec succès.\n";
+                // echo "Catégorie ajoutée avec succès.\n";
                 break;
             case 'update':
-                // $this->db->query("UPDATE categories SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
+                $this->db->query("UPDATE categories SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
                 echo "Catégorie mise à jour avec succès.\n";
                 break;
             case 'delete':
