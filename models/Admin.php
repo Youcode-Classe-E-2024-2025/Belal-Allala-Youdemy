@@ -68,12 +68,12 @@ class Admin extends User {
                 echo "Cours supprimé avec succès.\n";
                 break;
             default:
-                throw new Exception("Action non reconnue pour les cours.");
+                // throw new Exception("Action non reconnue pour les cours.");
         }
     }
 
     private function manageCategory($action, $data) {
-        // switch ($action) {
+        switch ($action) {
             case 'add':
                 $this->db->insert("INSERT INTO categories (name) VALUES (?)", [$data['name']]);
                 echo "Catégorie ajoutée avec succès.\n";
