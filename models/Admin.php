@@ -58,8 +58,8 @@ class Admin extends User {
                 break;
             case 'update':
                 $this->db->query(
-                    "UPDATE courses SET title = ?, description = ?, content = ?, teacher_id = ?, category_id = ? WHERE id = ?",
-                    // [$data['title'], $data['description'], $data['content'], $data['teacher_id'], $data['category_id'], $data['id']]
+                    // "UPDATE courses SET title = ?, description = ?, content = ?, teacher_id = ?, category_id = ? WHERE id = ?",
+                    [$data['title'], $data['description'], $data['content'], $data['teacher_id'], $data['category_id'], $data['id']]
                 );
                 echo "Cours mis à jour avec succès.\n";
                 break;
