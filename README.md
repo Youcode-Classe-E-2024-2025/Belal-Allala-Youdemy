@@ -12,8 +12,8 @@ Youdemy est une plateforme d'apprentissage en ligne qui permet aux enseignants d
 
 ### Pour les Étudiants
 - **Inscription aux cours** : Les étudiants peuvent s'inscrire à des cours et suivre leur progression.
-- **Téléchargement de certificats** : Les étudiants peuvent télécharger des certificats de complétion pour les cours qu'ils ont terminés.
-<!-- - **Gestion du profil** : Les étudiants peuvent mettre à jour leur profil et changer leur mot de passe. -->
+<!-- - **Téléchargement de certificats** : Les étudiants peuvent télécharger des certificats de complétion pour les cours qu'ils ont terminés. -->
+- **Gestion du profil** : Les étudiants peuvent mettre à jour leur profil et changer leur mot de passe.
 
 ## Technologies Utilisées
 
