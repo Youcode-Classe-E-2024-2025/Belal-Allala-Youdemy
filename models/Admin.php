@@ -65,10 +65,10 @@ class Admin extends User {
                 break;
             case 'delete':
                 $this->db->query("DELETE FROM courses WHERE id = ?", [$data['id']]);
-                echo "Cours supprimé avec succès.\n";
+                // echo "Cours supprimé avec succès.\n";
                 break;
             default:
-                // throw new Exception("Action non reconnue pour les cours.");
+                throw new Exception("Action non reconnue pour les cours.");
         }
     }
 
