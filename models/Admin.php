@@ -112,8 +112,8 @@ class Admin extends User {
 
     public function viewGlobalStatistics() {
         $totalCourses = $this->db->fetchColumn("SELECT COUNT(*) FROM courses");
-        $totalUsers = $this->db->fetchColumn("SELECT COUNT(*) FROM users");
-        // $totalTeachers = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'teacher'");
+        // $totalUsers = $this->db->fetchColumn("SELECT COUNT(*) FROM users");
+        $totalTeachers = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'teacher'");
         $totalStudents = $this->db->fetchColumn("SELECT COUNT(*) FROM users WHERE role = 'student'");
 
         echo "Statistiques globales :\n";
