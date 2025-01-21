@@ -15,9 +15,9 @@ Youdemy est une plateforme d'apprentissage en ligne qui permet aux enseignants d
 - **Téléchargement de certificats** : Les étudiants peuvent télécharger des certificats de complétion pour les cours qu'ils ont terminés.
 - **Gestion du profil** : Les étudiants peuvent mettre à jour leur profil et changer leur mot de passe.
 
-## Technologies Utilisées
+<!-- ## Technologies Utilisées -->
 
-<!-- - **Backend** : PHP, MySQL -->
+- **Backend** : PHP, MySQL
 - **Frontend** : HTML, CSS, Bootstrap, JavaScript
 - **Autres** : Composer (pour la gestion des dépendances), Git (pour le contrôle de version)
 
