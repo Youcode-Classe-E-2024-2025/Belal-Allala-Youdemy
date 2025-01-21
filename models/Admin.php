@@ -59,9 +59,9 @@ class Admin extends User {
             case 'update':
                 $this->db->query(
                     "UPDATE courses SET title = ?, description = ?, content = ?, teacher_id = ?, category_id = ? WHERE id = ?",
-                    [$data['title'], $data['description'], $data['content'], $data['teacher_id'], $data['category_id'], $data['id']]
+                    // [$data['title'], $data['description'], $data['content'], $data['teacher_id'], $data['category_id'], $data['id']]
                 );
-                // echo "Cours mis à jour avec succès.\n";
+                echo "Cours mis à jour avec succès.\n";
                 break;
             case 'delete':
                 $this->db->query("DELETE FROM courses WHERE id = ?", [$data['id']]);
