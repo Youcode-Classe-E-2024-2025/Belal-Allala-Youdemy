@@ -2,9 +2,9 @@
 
 Youdemy est une plateforme d'apprentissage en ligne qui permet aux enseignants de créer et de gérer des cours, et aux étudiants de s'inscrire à ces cours, de suivre leur progression et d'obtenir des certificats.
 
-## Fonctionnalités
+<!-- ## Fonctionnalités -->
 
-<!-- ### Pour les Enseignants -->
+### Pour les Enseignants
 - **Création de cours** : Les enseignants peuvent créer des cours avec des titres, des descriptions, du contenu, des catégories et des tags.
 - **Gestion des cours** : Les enseignants peuvent mettre à jour ou supprimer leurs cours.
 - **Gestion des étudiants** : Les enseignants peuvent voir les étudiants inscrits à leurs cours et les rejeter si nécessaire.
