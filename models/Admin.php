@@ -75,8 +75,8 @@ class Admin extends User {
     private function manageCategory($action, $data) {
         switch ($action) {
             case 'add':
-                $this->db->insert("INSERT INTO categories (name) VALUES (?)", [$data['name']]);
-                // echo "Catégorie ajoutée avec succès.\n";
+                // $this->db->insert("INSERT INTO categories (name) VALUES (?)", [$data['name']]);
+                echo "Catégorie ajoutée avec succès.\n";
                 break;
             case 'update':
                 $this->db->query("UPDATE categories SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
