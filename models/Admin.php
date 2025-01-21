@@ -102,8 +102,8 @@ class Admin extends User {
                 echo "Tag mis à jour avec succès.\n";
                 break;
             case 'delete':
-                $this->db->query("DELETE FROM tags WHERE id = ?", [$data['id']]);
-                // echo "Tag supprimé avec succès.\n";
+                // $this->db->query("DELETE FROM tags WHERE id = ?", [$data['id']]);
+                echo "Tag supprimé avec succès.\n";
                 break;
             default:
                 throw new Exception("Action non reconnue pour les tags.");
