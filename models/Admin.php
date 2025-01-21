@@ -120,7 +120,7 @@ class Admin extends User {
         echo "- Nombre total de cours : $totalCourses\n";
         echo "- Nombre total d'utilisateurs : $totalUsers\n";
         echo "- Nombre total d'enseignants : $totalTeachers\n";
-        echo "- Nombre total d'étudiants : $totalStudents\n";
+        // echo "- Nombre total d'étudiants : $totalStudents\n";
     }
 }
 

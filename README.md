@@ -1,4 +1,4 @@
- <!-- # Youdemy - Plateforme d'Apprentissage en Ligne -->
+ # Youdemy - Plateforme d'Apprentissage en Ligne
 
 Youdemy est une plateforme d'apprentissage en ligne qui permet aux enseignants de créer et de gérer des cours, et aux étudiants de s'inscrire à ces cours, de suivre leur progression et d'obtenir des certificats.
 
