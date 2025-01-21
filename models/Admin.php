@@ -95,10 +95,10 @@ class Admin extends User {
         switch ($action) {
             case 'add':
                 $this->db->insert("INSERT INTO tags (name) VALUES (?)", [$data['name']]);
-                echo "Tag ajouté avec succès.\n";
+                // echo "Tag ajouté avec succès.\n";
                 break;
             case 'update':
-                // $this->db->query("UPDATE tags SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
+                $this->db->query("UPDATE tags SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
                 echo "Tag mis à jour avec succès.\n";
                 break;
             case 'delete':
