@@ -17,7 +17,7 @@ Youdemy est une plateforme d'apprentissage en ligne qui permet aux enseignants d
 
 ## Technologies Utilisées
 
-- **Backend** : PHP, MySQL
-<!-- - **Frontend** : HTML, CSS, Bootstrap, JavaScript -->
+<!-- - **Backend** : PHP, MySQL -->
+- **Frontend** : HTML, CSS, Bootstrap, JavaScript
 - **Autres** : Composer (pour la gestion des dépendances), Git (pour le contrôle de version)
 
