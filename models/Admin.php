@@ -99,10 +99,10 @@ class Admin extends User {
                 break;
             case 'update':
                 $this->db->query("UPDATE tags SET name = ? WHERE id = ?", [$data['name'], $data['id']]);
-                echo "Tag mis à jour avec succès.\n";
+                // echo "Tag mis à jour avec succès.\n";
                 break;
             case 'delete':
-                // $this->db->query("DELETE FROM tags WHERE id = ?", [$data['id']]);
+                $this->db->query("DELETE FROM tags WHERE id = ?", [$data['id']]);
                 echo "Tag supprimé avec succès.\n";
                 break;
             default:
