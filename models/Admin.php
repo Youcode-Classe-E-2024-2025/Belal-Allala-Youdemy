@@ -92,9 +92,9 @@ class Admin extends User {
     }
 
     private function manageTag($action, $data) {
-        switch ($action) {
+        // switch ($action) {
             case 'add':
-                // $this->db->insert("INSERT INTO tags (name) VALUES (?)", [$data['name']]);
+                $this->db->insert("INSERT INTO tags (name) VALUES (?)", [$data['name']]);
                 echo "Tag ajouté avec succès.\n";
                 break;
             case 'update':
